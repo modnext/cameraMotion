@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_CAMERA_MOTION_SETTINGS" v="Asetusvalikko" />
+    <e k="input_CAMERA_MOTION_LEAN_TOGGLE" v="Sivuttaisliike" />
+
+    <!-- Dialog Titles -->
+    <e k="cameraMotion_dialogTitle" v="Kameran Liike" />
+
+    <!-- Global Settings -->
+    <e k="cameraMotion_globalSettings" v="Yleiset asetukset" />
+    <e k="cameraMotion_advancedMode" v="Lisäasetukset" />
+
+    <!-- Movement Settings -->
+    <e k="cameraMotion_inertia" v="Kiihdytys ja jarrutus" />
+    <e k="cameraMotion_cornering" v="Kääntymisliike" />
+    <e k="cameraMotion_terrain" v="Maaston aiheuttama liike" />
+    <e k="cameraMotion_headMovement" v="Reagointi pään liikkeeseen" />
+    <e k="cameraMotion_headMovementHint" v="Käytettävissä, kun Luonnollinen pään liike on pois päältä" />
+    <e k="cameraMotion_walking" v="Liike kävellessä" />
+
+    <!-- Camera Profiles -->
+    <e k="cameraMotion_profile_vehicleFirstPerson" v="Ajoneuvo — ohjaamonäkymä" />
+    <e k="cameraMotion_profile_vehicleThirdPerson" v="Ajoneuvo — ulkonäkymä" />
+    <e k="cameraMotion_profile_playerFirstPerson" v="Pelaaja — ensimmäinen persoona" />
+    <e k="cameraMotion_profile_playerThirdPerson" v="Pelaaja — kolmas persoona" />
+
+    <!-- Profile Settings -->
+    <e k="cameraMotion_enabled" v="Ota profiili käyttöön" />
+    <e k="cameraMotion_intensity" v="Liikkeen voimakkuus" />
+    <e k="cameraMotion_idleSway" v="Heiluminen paikallaan" />
+    <e k="cameraMotion_idleWhileMoving" v="Keinunta liikkeessä" />
+    <e k="cameraMotion_headLook" v="Luonnollinen pään liike" />
+    <e k="cameraMotion_lean" v="Sivuttaisliikkeen voimakkuus" />
+    <e k="cameraMotion_leanHold" v="Pidä painettuna sivuttaisliikettä varten" />
+
+    <!-- Camera Offsets -->
+    <e k="cameraMotion_offsetSection" v="Kameran siirtymä" />
+    <e k="cameraMotion_cameraOffsetX" v="Kameran siirtymä X" />
+    <e k="cameraMotion_offsetMode" v="Kameran siirtymän tila" />
+    <e k="cameraMotion_modeGlobal" v="Yleinen" />
+    <e k="cameraMotion_modeCustom" v="Mukautettu" />
+    <e k="cameraMotion_cameraOffsetY" v="Kameran siirtymä Y" />
+    <e k="cameraMotion_cameraOffsetZ" v="Kameran siirtymä Z" />
+    <e k="cameraMotion_cameraOffsetPitch" v="Kameran kallistussiirtymä" />
+
+    <!-- Actions -->
+    <e k="cameraMotion_resetProfile" v="Palauta oletukset" />
+    <e k="cameraMotion_resetAll" v="Palauta kaikki asetukset" />
+    <e k="cameraMotion_resetAllConfirm" v="Palautetaanko kaikki oletusasetukset ja poistetaanko kaikkien ajoneuvojen tallennetut kamerasiirtymät?" />
+  </elements>
+</l10n>

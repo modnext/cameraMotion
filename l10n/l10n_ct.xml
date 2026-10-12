@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_CAMERA_MOTION_SETTINGS" v="設定選單" />
+    <e k="input_CAMERA_MOTION_LEAN_TOGGLE" v="側傾" />
+
+    <!-- Dialog Titles -->
+    <e k="cameraMotion_dialogTitle" v="攝影機運動" />
+
+    <!-- Global Settings -->
+    <e k="cameraMotion_globalSettings" v="全域設定" />
+    <e k="cameraMotion_advancedMode" v="進階模式" />
+
+    <!-- Movement Settings -->
+    <e k="cameraMotion_inertia" v="加速與煞車" />
+    <e k="cameraMotion_cornering" v="轉彎時的移動" />
+    <e k="cameraMotion_terrain" v="地形移動" />
+    <e k="cameraMotion_headMovement" v="對視線轉動的反應" />
+    <e k="cameraMotion_headMovementHint" v="關閉自然頭部移動後可用" />
+    <e k="cameraMotion_walking" v="行走時的鏡頭移動" />
+
+    <!-- Camera Profiles -->
+    <e k="cameraMotion_profile_vehicleFirstPerson" v="載具 — 駕駛室視角" />
+    <e k="cameraMotion_profile_vehicleThirdPerson" v="載具 — 外部視角" />
+    <e k="cameraMotion_profile_playerFirstPerson" v="玩家 — 第一人稱" />
+    <e k="cameraMotion_profile_playerThirdPerson" v="玩家 — 第三人稱" />
+
+    <!-- Profile Settings -->
+    <e k="cameraMotion_enabled" v="啟用設定檔" />
+    <e k="cameraMotion_intensity" v="移動強度" />
+    <e k="cameraMotion_idleSway" v="靜止時的晃動" />
+    <e k="cameraMotion_idleWhileMoving" v="移動時晃動" />
+    <e k="cameraMotion_headLook" v="自然頭部移動" />
+    <e k="cameraMotion_lean" v="側傾幅度" />
+    <e k="cameraMotion_leanHold" v="按住以側傾" />
+
+    <!-- Camera Offsets -->
+    <e k="cameraMotion_offsetSection" v="攝影機偏移" />
+    <e k="cameraMotion_cameraOffsetX" v="攝影機 X 軸偏移" />
+    <e k="cameraMotion_offsetMode" v="攝影機偏移模式" />
+    <e k="cameraMotion_modeGlobal" v="全域" />
+    <e k="cameraMotion_modeCustom" v="自訂" />
+    <e k="cameraMotion_cameraOffsetY" v="攝影機 Y 軸偏移" />
+    <e k="cameraMotion_cameraOffsetZ" v="攝影機 Z 軸偏移" />
+    <e k="cameraMotion_cameraOffsetPitch" v="攝影機俯仰角偏移" />
+
+    <!-- Actions -->
+    <e k="cameraMotion_resetProfile" v="還原預設值" />
+    <e k="cameraMotion_resetAll" v="重設所有設定" />
+    <e k="cameraMotion_resetAllConfirm" v="將所有設定恢復為預設值，並刪除所有已儲存的車輛攝影機偏移？" />
+  </elements>
+</l10n>
+

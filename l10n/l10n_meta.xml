@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_CAMERA_MOTION_SETTINGS" v="" />
+    <e k="input_CAMERA_MOTION_LEAN_TOGGLE" v="" />
+
+    <!-- Dialog Titles -->
+    <e k="cameraMotion_dialogTitle" v="" />
+
+    <!-- Global Settings -->
+    <e k="cameraMotion_globalSettings" v="" />
+    <e k="cameraMotion_advancedMode" v="" />
+
+    <!-- Movement Settings -->
+    <e k="cameraMotion_inertia" v="" />
+    <e k="cameraMotion_cornering" v="" />
+    <e k="cameraMotion_terrain" v="" />
+    <e k="cameraMotion_headMovement" v="" />
+    <e k="cameraMotion_headMovementHint" v="" />
+    <e k="cameraMotion_walking" v="" />
+
+    <!-- Camera Profiles -->
+    <e k="cameraMotion_profile_vehicleFirstPerson" v="" />
+    <e k="cameraMotion_profile_vehicleThirdPerson" v="" />
+    <e k="cameraMotion_profile_playerFirstPerson" v="" />
+    <e k="cameraMotion_profile_playerThirdPerson" v="" />
+
+    <!-- Profile Settings -->
+    <e k="cameraMotion_enabled" v="" />
+    <e k="cameraMotion_intensity" v="" />
+    <e k="cameraMotion_idleSway" v="" />
+    <e k="cameraMotion_idleWhileMoving" v="" />
+    <e k="cameraMotion_headLook" v="" />
+    <e k="cameraMotion_lean" v="" />
+    <e k="cameraMotion_leanHold" v="" />
+
+    <!-- Camera Offsets -->
+    <e k="cameraMotion_offsetSection" v="" />
+    <e k="cameraMotion_cameraOffsetX" v="" />
+    <e k="cameraMotion_offsetMode" v="" />
+    <e k="cameraMotion_modeGlobal" v="" />
+    <e k="cameraMotion_modeCustom" v="" />
+    <e k="cameraMotion_cameraOffsetY" v="" />
+    <e k="cameraMotion_cameraOffsetZ" v="" />
+    <e k="cameraMotion_cameraOffsetPitch" v="" />
+
+    <!-- Actions -->
+    <e k="cameraMotion_resetProfile" v="" />
+    <e k="cameraMotion_resetAll" v="" />
+    <e k="cameraMotion_resetAllConfirm" v="" />
+  </elements>
+</l10n>

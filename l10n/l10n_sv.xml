@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_CAMERA_MOTION_SETTINGS" v="Inställningsmeny" />
+    <e k="input_CAMERA_MOTION_LEAN_TOGGLE" v="Luta" />
+
+    <!-- Dialog Titles -->
+    <e k="cameraMotion_dialogTitle" v="Kamerarörelse" />
+
+    <!-- Global Settings -->
+    <e k="cameraMotion_globalSettings" v="Globala inställningar" />
+    <e k="cameraMotion_advancedMode" v="Avancerat läge" />
+
+    <!-- Movement Settings -->
+    <e k="cameraMotion_inertia" v="Acceleration och bromsning" />
+    <e k="cameraMotion_cornering" v="Rörelse i kurvor" />
+    <e k="cameraMotion_terrain" v="Terrängrörelse" />
+    <e k="cameraMotion_headMovement" v="Reaktion på huvudrörelser" />
+    <e k="cameraMotion_headMovementHint" v="Tillgängligt när Naturliga huvudrörelser är avstängt" />
+    <e k="cameraMotion_walking" v="Rörelse när du går" />
+
+    <!-- Camera Profiles -->
+    <e k="cameraMotion_profile_vehicleFirstPerson" v="Fordon — förarhyttevyn" />
+    <e k="cameraMotion_profile_vehicleThirdPerson" v="Fordon — vy utifrån" />
+    <e k="cameraMotion_profile_playerFirstPerson" v="Spelare — första person" />
+    <e k="cameraMotion_profile_playerThirdPerson" v="Spelare — tredje person" />
+
+    <!-- Profile Settings -->
+    <e k="cameraMotion_enabled" v="Aktivera profil" />
+    <e k="cameraMotion_intensity" v="Rörelsestyrka" />
+    <e k="cameraMotion_idleSway" v="Svajning i stillastående" />
+    <e k="cameraMotion_idleWhileMoving" v="Gungning i rörelse" />
+    <e k="cameraMotion_headLook" v="Naturliga huvudrörelser" />
+    <e k="cameraMotion_lean" v="Lutningsavstånd" />
+    <e k="cameraMotion_leanHold" v="Håll in för att luta" />
+
+    <!-- Camera Offsets -->
+    <e k="cameraMotion_offsetSection" v="Kameraförskjutning" />
+    <e k="cameraMotion_cameraOffsetX" v="Kameraförskjutning X" />
+    <e k="cameraMotion_offsetMode" v="Läge för kameraförskjutning" />
+    <e k="cameraMotion_modeGlobal" v="Global" />
+    <e k="cameraMotion_modeCustom" v="Anpassad" />
+    <e k="cameraMotion_cameraOffsetY" v="Kameraförskjutning Y" />
+    <e k="cameraMotion_cameraOffsetZ" v="Kameraförskjutning Z" />
+    <e k="cameraMotion_cameraOffsetPitch" v="Kamerans lutning" />
+
+    <!-- Actions -->
+    <e k="cameraMotion_resetProfile" v="Återställ profil" />
+    <e k="cameraMotion_resetAll" v="Återställ alla inställningar" />
+    <e k="cameraMotion_resetAllConfirm" v="Återställ alla standardinställningar och ta bort alla sparade kameraförskjutningar för fordon?" />
+  </elements>
+</l10n>

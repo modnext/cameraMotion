@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_CAMERA_MOTION_SETTINGS" v="Меню настроек" />
+    <e k="input_CAMERA_MOTION_LEAN_TOGGLE" v="Наклон" />
+
+    <!-- Dialog Titles -->
+    <e k="cameraMotion_dialogTitle" v="Движение Камеры" />
+
+    <!-- Global Settings -->
+    <e k="cameraMotion_globalSettings" v="Общие настройки" />
+    <e k="cameraMotion_advancedMode" v="Расширенный режим" />
+
+    <!-- Movement Settings -->
+    <e k="cameraMotion_inertia" v="Ускорение и торможение" />
+    <e k="cameraMotion_cornering" v="Движение в поворотах" />
+    <e k="cameraMotion_terrain" v="Движение по неровностям" />
+    <e k="cameraMotion_headMovement" v="Реакция на поворот головы" />
+    <e k="cameraMotion_headMovementHint" v="Доступно после отключения естественного движения головы" />
+    <e k="cameraMotion_walking" v="Движение при ходьбе" />
+
+    <!-- Camera Profiles -->
+    <e k="cameraMotion_profile_vehicleFirstPerson" v="Транспорт — вид из кабины" />
+    <e k="cameraMotion_profile_vehicleThirdPerson" v="Транспорт — вид снаружи" />
+    <e k="cameraMotion_profile_playerFirstPerson" v="Игрок — от первого лица" />
+    <e k="cameraMotion_profile_playerThirdPerson" v="Игрок — от третьего лица" />
+
+    <!-- Profile Settings -->
+    <e k="cameraMotion_enabled" v="Включить профиль" />
+    <e k="cameraMotion_intensity" v="Сила движения" />
+    <e k="cameraMotion_idleSway" v="Покачивание в покое" />
+    <e k="cameraMotion_idleWhileMoving" v="Покачивание в движении" />
+    <e k="cameraMotion_headLook" v="Естественное движение головы" />
+    <e k="cameraMotion_lean" v="Амплитуда наклона" />
+    <e k="cameraMotion_leanHold" v="Удерживайте для наклона" />
+
+    <!-- Camera Offsets -->
+    <e k="cameraMotion_offsetSection" v="Смещение камеры" />
+    <e k="cameraMotion_cameraOffsetX" v="Смещение камеры X" />
+    <e k="cameraMotion_offsetMode" v="Режим смещения камеры" />
+    <e k="cameraMotion_modeGlobal" v="Общий" />
+    <e k="cameraMotion_modeCustom" v="Пользовательский" />
+    <e k="cameraMotion_cameraOffsetY" v="Смещение камеры Y" />
+    <e k="cameraMotion_cameraOffsetZ" v="Смещение камеры Z" />
+    <e k="cameraMotion_cameraOffsetPitch" v="Вертикальный наклон камеры" />
+
+    <!-- Actions -->
+    <e k="cameraMotion_resetProfile" v="Сбросить профиль" />
+    <e k="cameraMotion_resetAll" v="Сбросить все настройки" />
+    <e k="cameraMotion_resetAllConfirm" v="Восстановить все настройки по умолчанию и удалить сохранённые смещения камер всех транспортных средств?" />
+  </elements>
+</l10n>

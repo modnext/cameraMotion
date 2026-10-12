@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_CAMERA_MOTION_SETTINGS" v="Indstillingsmenu" />
+    <e k="input_CAMERA_MOTION_LEAN_TOGGLE" v="Læn" />
+
+    <!-- Dialog Titles -->
+    <e k="cameraMotion_dialogTitle" v="Kamerabevægelse" />
+
+    <!-- Global Settings -->
+    <e k="cameraMotion_globalSettings" v="Globale indstillinger" />
+    <e k="cameraMotion_advancedMode" v="Avanceret tilstand" />
+
+    <!-- Movement Settings -->
+    <e k="cameraMotion_inertia" v="Acceleration og bremsning" />
+    <e k="cameraMotion_cornering" v="Bevægelse i sving" />
+    <e k="cameraMotion_terrain" v="Terrænbevægelse" />
+    <e k="cameraMotion_headMovement" v="Reaktion på hovedbevægelser" />
+    <e k="cameraMotion_headMovementHint" v="Tilgængelig, når Naturlige hovedbevægelser er slået fra" />
+    <e k="cameraMotion_walking" v="Bevægelse under gang" />
+
+    <!-- Camera Profiles -->
+    <e k="cameraMotion_profile_vehicleFirstPerson" v="Køretøj — førerhusvisning" />
+    <e k="cameraMotion_profile_vehicleThirdPerson" v="Køretøj — visning udefra" />
+    <e k="cameraMotion_profile_playerFirstPerson" v="Spiller — første person" />
+    <e k="cameraMotion_profile_playerThirdPerson" v="Spiller — tredje person" />
+
+    <!-- Profile Settings -->
+    <e k="cameraMotion_enabled" v="Aktivér profil" />
+    <e k="cameraMotion_intensity" v="Bevægelsesstyrke" />
+    <e k="cameraMotion_idleSway" v="Svajen i stilstand" />
+    <e k="cameraMotion_idleWhileMoving" v="Svajen under bevægelse" />
+    <e k="cameraMotion_headLook" v="Naturlige hovedbevægelser" />
+    <e k="cameraMotion_lean" v="Hældningsafstand" />
+    <e k="cameraMotion_leanHold" v="Hold inde for at læne" />
+
+    <!-- Camera Offsets -->
+    <e k="cameraMotion_offsetSection" v="Kameraforskydning" />
+    <e k="cameraMotion_cameraOffsetX" v="Kameraforskydning X" />
+    <e k="cameraMotion_offsetMode" v="Tilstand for kameraforskydning" />
+    <e k="cameraMotion_modeGlobal" v="Global" />
+    <e k="cameraMotion_modeCustom" v="Brugerdefineret" />
+    <e k="cameraMotion_cameraOffsetY" v="Kameraforskydning Y" />
+    <e k="cameraMotion_cameraOffsetZ" v="Kameraforskydning Z" />
+    <e k="cameraMotion_cameraOffsetPitch" v="Kamerahældning" />
+
+    <!-- Actions -->
+    <e k="cameraMotion_resetProfile" v="Nulstil profil" />
+    <e k="cameraMotion_resetAll" v="Nulstil alle indstillinger" />
+    <e k="cameraMotion_resetAllConfirm" v="Gendan alle standardindstillinger, og slet alle gemte kameraforskydninger for køretøjer?" />
+  </elements>
+</l10n>
+

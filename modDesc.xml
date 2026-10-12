@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="114">
+  <author>aaw3k</author>
+  <version>1.0.0.0</version>
+
+  <title>
+    <en>Camera Motion</en>
+    <de>Kamerabewegung</de>
+    <fr>Mouvement De Caméra</fr>
+    <pl>Ruch Kamery</pl>
+    <ru>Движение Камеры</ru>
+  </title>
+
+  <description>
+    <en><![CDATA[
+Adds smooth camera movement effects and refines player and vehicle camera behavior, including sway and responses to acceleration, braking, cornering and uneven terrain.
+
+Features:
+- Customize 4 profiles for vehicle and player cameras, in first and third person.
+- Adjust movement strength with one slider or fine-tune individual effects in advanced mode.
+- Enable natural head movement in the cab and leaning in first person.
+- Set camera offsets per vehicle. Settings are saved automatically.
+
+Hotkeys:
+- Press F9 to open settings.
+- Press or hold the first side mouse button (Mouse 4) to lean, depending on your settings.
+
+Other mods that modify vehicle or player cameras may interfere with camera effects.
+
+For more info or bug reports, visit GitHub (modnext/cameraMotion).
+]]></en>
+    <de><![CDATA[
+Fügt flüssige Bewegungseffekte und Verbesserungen für Spieler- und Fahrzeugkameras hinzu, darunter Schwanken und Reaktionen auf Beschleunigen, Bremsen, Kurvenfahrten und unebenes Gelände.
+
+Funktionen:
+- Passe 4 Profile für Fahrzeug- und Spielerkameras in der Ego- und Dritte-Person-Perspektive an.
+- Stelle die Bewegungsstärke mit einem Regler ein oder passe einzelne Effekte im erweiterten Modus an.
+- Aktiviere natürliche Kopfbewegungen in der Kabine und das Hinauslehnen in der Ego-Perspektive.
+- Stelle den Kameraversatz für jedes Fahrzeug ein. Einstellungen werden automatisch gespeichert.
+
+Tastenkombinationen:
+- Drücke F9, um die Einstellungen zu öffnen.
+- Drücke oder halte die erste seitliche Maustaste (Maustaste 4), um dich je nach Einstellung hinauszulehnen.
+
+Andere Mods, die Fahrzeug- oder Spielerkameras verändern, können die Kameraeffekte beeinträchtigen.
+
+Für weitere Informationen oder um einen Fehler zu melden, besuche GitHub (modnext/cameraMotion).
+]]></de>
+    <fr><![CDATA[
+Ajoute des effets de mouvement fluides aux caméras du joueur et des véhicules, avec balancement et réactions aux accélérations, freinages, virages et irrégularités du terrain.
+
+Fonctionnalités :
+- Personnalisez 4 profils pour les caméras du véhicule et du joueur, à la première et à la troisième personne.
+- Réglez l'intensité des mouvements avec un curseur ou ajustez chaque effet en mode avancé.
+- Activez les mouvements naturels de la tête en cabine et la possibilité de vous pencher à la première personne.
+- Réglez le décalage de la caméra pour chaque véhicule. Les réglages sont sauvegardés automatiquement.
+
+Raccourcis clavier :
+- Appuyez sur F9 pour ouvrir les réglages.
+- Appuyez sur le premier bouton latéral de la souris (bouton 4) ou maintenez-le pour vous pencher, selon vos réglages.
+
+Les autres mods qui modifient les caméras du véhicule ou du joueur peuvent perturber les effets de caméra.
+
+Pour plus d'informations ou pour signaler un bug, rendez-vous sur GitHub (modnext/cameraMotion).
+]]></fr>
+    <pl><![CDATA[
+Dodaje płynne efekty ruchu i usprawnienia kamer gracza oraz pojazdów, w tym kołysanie i reakcje na przyspieszanie, hamowanie, skręcanie i nierówności terenu.
+
+Funkcje:
+- Dostosuj 4 profile kamer pojazdu i gracza, w pierwszej i trzeciej osobie.
+- Ustaw siłę ruchu jednym suwakiem lub dopasuj poszczególne efekty w trybie zaawansowanym.
+- Włącz naturalny ruch głowy w kabinie i wychylanie w pierwszej osobie.
+- Ustaw przesunięcie kamery dla poszczególnych pojazdów. Ustawienia zapisują się automatycznie.
+
+Skróty klawiszowe:
+- Naciśnij F9, aby otworzyć ustawienia.
+- Naciśnij lub przytrzymaj pierwszy boczny przycisk myszy (Mysz 4), aby się wychylić, zależnie od ustawień.
+
+Inne mody zmieniające kamerę pojazdu lub gracza mogą zakłócać działanie efektów kamery.
+
+Więcej informacji i zgłaszanie błędów: GitHub (modnext/cameraMotion).
+]]></pl>
+    <ru><![CDATA[
+Добавляет плавные эффекты движения и улучшения камер игрока и транспорта, включая покачивание и реакции на ускорение, торможение, повороты и неровности местности.
+
+Особенности:
+- Настройте 4 профиля камер транспорта и игрока для вида от первого и третьего лица.
+- Регулируйте интенсивность движений одним ползунком или настраивайте отдельные эффекты в расширенном режиме.
+- Включите естественные движения головы в кабине и возможность выглядывать в сторону в виде от первого лица.
+- Настройте смещение камеры для каждого транспортного средства. Настройки сохраняются автоматически.
+
+Горячие клавиши:
+- Нажмите F9, чтобы открыть настройки.
+- Нажмите или удерживайте первую боковую кнопку мыши (кнопка 4), чтобы выглянуть в сторону, в зависимости от настроек.
+
+Другие моды, изменяющие камеры транспорта или игрока, могут нарушать работу эффектов камеры.
+
+Дополнительная информация и сообщения об ошибках: GitHub (modnext/cameraMotion).
+]]></ru>
+  </description>
+
+  <l10n filenamePrefix="l10n/l10n" />
+
+  <iconFilename>icon_cameraMotion.png</iconFilename>
+  <multiplayer supported="true" />
+
+  <extraSourceFiles>
+    <sourceFile filename="scripts/CameraMotionSystem.lua" />
+  </extraSourceFiles>
+
+  <actions>
+    <action name="CAMERA_MOTION_SETTINGS" axisType="HALF" />
+    <action name="CAMERA_MOTION_LEAN_TOGGLE" axisType="HALF" />
+  </actions>
+
+  <inputBinding>
+    <actionBinding action="CAMERA_MOTION_SETTINGS">
+      <binding device="KB_MOUSE_DEFAULT" input="KEY_f9" />
+    </actionBinding>
+    <actionBinding action="CAMERA_MOTION_LEAN_TOGGLE">
+      <binding device="KB_MOUSE_DEFAULT" input="MOUSE_BUTTON_X1" />
+    </actionBinding>
+  </inputBinding>
+</modDesc>

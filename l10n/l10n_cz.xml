@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_CAMERA_MOTION_SETTINGS" v="Menu nastavení" />
+    <e k="input_CAMERA_MOTION_LEAN_TOGGLE" v="Náklon" />
+
+    <!-- Dialog Titles -->
+    <e k="cameraMotion_dialogTitle" v="Pohyb Kamery" />
+
+    <!-- Global Settings -->
+    <e k="cameraMotion_globalSettings" v="Globální nastavení" />
+    <e k="cameraMotion_advancedMode" v="Pokročilý režim" />
+
+    <!-- Movement Settings -->
+    <e k="cameraMotion_inertia" v="Zrychlení a brzdění" />
+    <e k="cameraMotion_cornering" v="Pohyb v zatáčkách" />
+    <e k="cameraMotion_terrain" v="Pohyb na nerovném terénu" />
+    <e k="cameraMotion_headMovement" v="Reakce na pohyb hlavy" />
+    <e k="cameraMotion_headMovementHint" v="Dostupné po vypnutí přirozeného pohybu hlavy" />
+    <e k="cameraMotion_walking" v="Pohyb při chůzi" />
+
+    <!-- Camera Profiles -->
+    <e k="cameraMotion_profile_vehicleFirstPerson" v="Vozidlo — pohled z kabiny" />
+    <e k="cameraMotion_profile_vehicleThirdPerson" v="Vozidlo — pohled zvenčí" />
+    <e k="cameraMotion_profile_playerFirstPerson" v="Hráč — pohled z první osoby" />
+    <e k="cameraMotion_profile_playerThirdPerson" v="Hráč — pohled ze třetí osoby" />
+
+    <!-- Profile Settings -->
+    <e k="cameraMotion_enabled" v="Povolit profil" />
+    <e k="cameraMotion_intensity" v="Síla pohybu" />
+    <e k="cameraMotion_idleSway" v="Pohupování při nečinnosti" />
+    <e k="cameraMotion_idleWhileMoving" v="Pohupování za pohybu" />
+    <e k="cameraMotion_headLook" v="Přirozený pohyb hlavy" />
+    <e k="cameraMotion_lean" v="Rozsah náklonu" />
+    <e k="cameraMotion_leanHold" v="Podržením naklonit" />
+
+    <!-- Camera Offsets -->
+    <e k="cameraMotion_offsetSection" v="Posun kamery" />
+    <e k="cameraMotion_cameraOffsetX" v="Posun kamery X" />
+    <e k="cameraMotion_offsetMode" v="Režim posunu kamery" />
+    <e k="cameraMotion_modeGlobal" v="Globální" />
+    <e k="cameraMotion_modeCustom" v="Vlastní" />
+    <e k="cameraMotion_cameraOffsetY" v="Posun kamery Y" />
+    <e k="cameraMotion_cameraOffsetZ" v="Posun kamery Z" />
+    <e k="cameraMotion_cameraOffsetPitch" v="Posun sklonu kamery" />
+
+    <!-- Actions -->
+    <e k="cameraMotion_resetProfile" v="Obnovit profil" />
+    <e k="cameraMotion_resetAll" v="Obnovit všechna nastavení" />
+    <e k="cameraMotion_resetAllConfirm" v="Obnovit všechna výchozí nastavení a smazat uložené posuny kamer všech vozidel?" />
+  </elements>
+</l10n>

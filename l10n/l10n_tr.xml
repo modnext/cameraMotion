@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_CAMERA_MOTION_SETTINGS" v="Ayar Menüsü" />
+    <e k="input_CAMERA_MOTION_LEAN_TOGGLE" v="Yana Eğil" />
+
+    <!-- Dialog Titles -->
+    <e k="cameraMotion_dialogTitle" v="Kamera Hareketi" />
+
+    <!-- Global Settings -->
+    <e k="cameraMotion_globalSettings" v="Genel Ayarlar" />
+    <e k="cameraMotion_advancedMode" v="Gelişmiş Mod" />
+
+    <!-- Movement Settings -->
+    <e k="cameraMotion_inertia" v="Hızlanma ve frenleme" />
+    <e k="cameraMotion_cornering" v="Viraj hareketi" />
+    <e k="cameraMotion_terrain" v="Arazi hareketi" />
+    <e k="cameraMotion_headMovement" v="Baş hareketine tepki" />
+    <e k="cameraMotion_headMovementHint" v="Doğal kafa hareketi kapatıldığında kullanılabilir" />
+    <e k="cameraMotion_walking" v="Yürürken hareket" />
+
+    <!-- Camera Profiles -->
+    <e k="cameraMotion_profile_vehicleFirstPerson" v="Araç — kabin görünümü" />
+    <e k="cameraMotion_profile_vehicleThirdPerson" v="Araç — dış görünüm" />
+    <e k="cameraMotion_profile_playerFirstPerson" v="Oyuncu — birinci şahıs" />
+    <e k="cameraMotion_profile_playerThirdPerson" v="Oyuncu — üçüncü şahıs" />
+
+    <!-- Profile Settings -->
+    <e k="cameraMotion_enabled" v="Profili etkinleştir" />
+    <e k="cameraMotion_intensity" v="Hareket yoğunluğu" />
+    <e k="cameraMotion_idleSway" v="Boştayken sallanma" />
+    <e k="cameraMotion_idleWhileMoving" v="Hareket sırasında sallanma" />
+    <e k="cameraMotion_headLook" v="Doğal kafa hareketi" />
+    <e k="cameraMotion_lean" v="Eğilme mesafesi" />
+    <e k="cameraMotion_leanHold" v="Eğilmek için basılı tut" />
+
+    <!-- Camera Offsets -->
+    <e k="cameraMotion_offsetSection" v="Kamera kaydırması" />
+    <e k="cameraMotion_cameraOffsetX" v="Kamera kaydırması X" />
+    <e k="cameraMotion_offsetMode" v="Kamera kaydırma modu" />
+    <e k="cameraMotion_modeGlobal" v="Genel" />
+    <e k="cameraMotion_modeCustom" v="Özel" />
+    <e k="cameraMotion_cameraOffsetY" v="Kamera kaydırması Y" />
+    <e k="cameraMotion_cameraOffsetZ" v="Kamera kaydırması Z" />
+    <e k="cameraMotion_cameraOffsetPitch" v="Kamera eğim kaydırması" />
+
+    <!-- Actions -->
+    <e k="cameraMotion_resetProfile" v="Profili sıfırla" />
+    <e k="cameraMotion_resetAll" v="Tüm ayarları sıfırla" />
+    <e k="cameraMotion_resetAllConfirm" v="Tüm varsayılan ayarlar geri yüklensin ve kaydedilen tüm araç kamera ofsetleri silinsin mi?" />
+  </elements>
+</l10n>
+

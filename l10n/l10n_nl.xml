@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_CAMERA_MOTION_SETTINGS" v="Instellingenmenu" />
+    <e k="input_CAMERA_MOTION_LEAN_TOGGLE" v="Leunen" />
+
+    <!-- Dialog Titles -->
+    <e k="cameraMotion_dialogTitle" v="Camerabeweging" />
+
+    <!-- Global Settings -->
+    <e k="cameraMotion_globalSettings" v="Algemene instellingen" />
+    <e k="cameraMotion_advancedMode" v="Geavanceerde modus" />
+
+    <!-- Movement Settings -->
+    <e k="cameraMotion_inertia" v="Versnellen en remmen" />
+    <e k="cameraMotion_cornering" v="Beweging in bochten" />
+    <e k="cameraMotion_terrain" v="Terreinbeweging" />
+    <e k="cameraMotion_headMovement" v="Reactie op hoofdbewegingen" />
+    <e k="cameraMotion_headMovementHint" v="Beschikbaar wanneer Natuurlijke hoofdbeweging uit staat" />
+    <e k="cameraMotion_walking" v="Beweging tijdens het lopen" />
+
+    <!-- Camera Profiles -->
+    <e k="cameraMotion_profile_vehicleFirstPerson" v="Voertuig — cabineweergave" />
+    <e k="cameraMotion_profile_vehicleThirdPerson" v="Voertuig — buitenaanzicht" />
+    <e k="cameraMotion_profile_playerFirstPerson" v="Speler — eerste persoon" />
+    <e k="cameraMotion_profile_playerThirdPerson" v="Speler — derde persoon" />
+
+    <!-- Profile Settings -->
+    <e k="cameraMotion_enabled" v="Profiel inschakelen" />
+    <e k="cameraMotion_intensity" v="Bewegingssterkte" />
+    <e k="cameraMotion_idleSway" v="Schommelen in stilstand" />
+    <e k="cameraMotion_idleWhileMoving" v="Schommelen bij beweging" />
+    <e k="cameraMotion_headLook" v="Natuurlijke hoofdbeweging" />
+    <e k="cameraMotion_lean" v="Leunafstand" />
+    <e k="cameraMotion_leanHold" v="Vasthouden om te leunen" />
+
+    <!-- Camera Offsets -->
+    <e k="cameraMotion_offsetSection" v="Camera-offset" />
+    <e k="cameraMotion_cameraOffsetX" v="Camera-offset X" />
+    <e k="cameraMotion_offsetMode" v="Camera-offsetmodus" />
+    <e k="cameraMotion_modeGlobal" v="Algemeen" />
+    <e k="cameraMotion_modeCustom" v="Aangepast" />
+    <e k="cameraMotion_cameraOffsetY" v="Camera-offset Y" />
+    <e k="cameraMotion_cameraOffsetZ" v="Camera-offset Z" />
+    <e k="cameraMotion_cameraOffsetPitch" v="Camera-kanteling" />
+
+    <!-- Actions -->
+    <e k="cameraMotion_resetProfile" v="Profiel resetten" />
+    <e k="cameraMotion_resetAll" v="Alle instellingen herstellen" />
+    <e k="cameraMotion_resetAllConfirm" v="Alle standaardinstellingen herstellen en alle opgeslagen cameraverschuivingen voor voertuigen verwijderen?" />
+  </elements>
+</l10n>

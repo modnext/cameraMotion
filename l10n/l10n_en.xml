@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_CAMERA_MOTION_SETTINGS" v="Settings Menu" />
+    <e k="input_CAMERA_MOTION_LEAN_TOGGLE" v="Lean" />
+
+    <!-- Dialog Titles -->
+    <e k="cameraMotion_dialogTitle" v="Camera Motion" />
+
+    <!-- Global Settings -->
+    <e k="cameraMotion_globalSettings" v="Global settings" />
+    <e k="cameraMotion_advancedMode" v="Advanced mode" />
+
+    <!-- Movement Settings -->
+    <e k="cameraMotion_inertia" v="Acceleration and braking" />
+    <e k="cameraMotion_cornering" v="Cornering movement" />
+    <e k="cameraMotion_terrain" v="Terrain movement" />
+    <e k="cameraMotion_headMovement" v="Look movement response" />
+    <e k="cameraMotion_headMovementHint" v="Available when Natural head movement is OFF" />
+    <e k="cameraMotion_walking" v="Walking movement" />
+
+    <!-- Camera Profiles -->
+    <e k="cameraMotion_profile_vehicleFirstPerson" v="Vehicle — cab view" />
+    <e k="cameraMotion_profile_vehicleThirdPerson" v="Vehicle — outside view" />
+    <e k="cameraMotion_profile_playerFirstPerson" v="Player — first person" />
+    <e k="cameraMotion_profile_playerThirdPerson" v="Player — third person" />
+
+    <!-- Profile Settings -->
+    <e k="cameraMotion_enabled" v="Enable profile" />
+    <e k="cameraMotion_intensity" v="Movement strength" />
+    <e k="cameraMotion_idleSway" v="Idle sway" />
+    <e k="cameraMotion_idleWhileMoving" v="Sway while moving" />
+    <e k="cameraMotion_headLook" v="Natural head movement" />
+    <e k="cameraMotion_lean" v="Leaning distance" />
+    <e k="cameraMotion_leanHold" v="Hold to lean" />
+
+    <!-- Camera Offsets -->
+    <e k="cameraMotion_offsetSection" v="Camera Offset" />
+    <e k="cameraMotion_cameraOffsetX" v="Camera Offset X" />
+    <e k="cameraMotion_offsetMode" v="Camera offset mode" />
+    <e k="cameraMotion_modeGlobal" v="Global" />
+    <e k="cameraMotion_modeCustom" v="Custom" />
+    <e k="cameraMotion_cameraOffsetY" v="Camera Offset Y" />
+    <e k="cameraMotion_cameraOffsetZ" v="Camera Offset Z" />
+    <e k="cameraMotion_cameraOffsetPitch" v="Camera pitch offset" />
+
+    <!-- Actions -->
+    <e k="cameraMotion_resetProfile" v="Restore defaults" />
+    <e k="cameraMotion_resetAll" v="Reset all settings" />
+    <e k="cameraMotion_resetAllConfirm" v="Restore all settings to their defaults and delete all saved vehicle camera offsets?" />
+  </elements>
+</l10n>

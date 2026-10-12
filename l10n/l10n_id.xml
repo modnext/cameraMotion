@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_CAMERA_MOTION_SETTINGS" v="Menu Pengaturan" />
+    <e k="input_CAMERA_MOTION_LEAN_TOGGLE" v="Condongkan" />
+
+    <!-- Dialog Titles -->
+    <e k="cameraMotion_dialogTitle" v="Gerakan Kamera" />
+
+    <!-- Global Settings -->
+    <e k="cameraMotion_globalSettings" v="Pengaturan Global" />
+    <e k="cameraMotion_advancedMode" v="Mode Lanjutan" />
+
+    <!-- Movement Settings -->
+    <e k="cameraMotion_inertia" v="Akselerasi dan pengereman" />
+    <e k="cameraMotion_cornering" v="Gerakan saat menikung" />
+    <e k="cameraMotion_terrain" v="Gerakan di medan" />
+    <e k="cameraMotion_headMovement" v="Respons terhadap gerakan kepala" />
+    <e k="cameraMotion_headMovementHint" v="Tersedia saat Gerakan kepala alami dinonaktifkan" />
+    <e k="cameraMotion_walking" v="Gerakan saat berjalan" />
+
+    <!-- Camera Profiles -->
+    <e k="cameraMotion_profile_vehicleFirstPerson" v="Kendaraan — tampilan kabin" />
+    <e k="cameraMotion_profile_vehicleThirdPerson" v="Kendaraan — tampilan luar" />
+    <e k="cameraMotion_profile_playerFirstPerson" v="Pemain — orang pertama" />
+    <e k="cameraMotion_profile_playerThirdPerson" v="Pemain — orang ketiga" />
+
+    <!-- Profile Settings -->
+    <e k="cameraMotion_enabled" v="Aktifkan profil" />
+    <e k="cameraMotion_intensity" v="Kekuatan gerakan" />
+    <e k="cameraMotion_idleSway" v="Ayunan saat diam" />
+    <e k="cameraMotion_idleWhileMoving" v="Ayunan saat bergerak" />
+    <e k="cameraMotion_headLook" v="Gerakan kepala alami" />
+    <e k="cameraMotion_lean" v="Jarak condong" />
+    <e k="cameraMotion_leanHold" v="Tahan untuk condong" />
+
+    <!-- Camera Offsets -->
+    <e k="cameraMotion_offsetSection" v="Pergeseran kamera" />
+    <e k="cameraMotion_cameraOffsetX" v="Pergeseran kamera X" />
+    <e k="cameraMotion_offsetMode" v="Mode pergeseran kamera" />
+    <e k="cameraMotion_modeGlobal" v="Global" />
+    <e k="cameraMotion_modeCustom" v="Kustom" />
+    <e k="cameraMotion_cameraOffsetY" v="Pergeseran kamera Y" />
+    <e k="cameraMotion_cameraOffsetZ" v="Pergeseran kamera Z" />
+    <e k="cameraMotion_cameraOffsetPitch" v="Pergeseran kemiringan kamera" />
+
+    <!-- Actions -->
+    <e k="cameraMotion_resetProfile" v="Atur ulang profil" />
+    <e k="cameraMotion_resetAll" v="Atur ulang semua pengaturan" />
+    <e k="cameraMotion_resetAllConfirm" v="Pulihkan semua pengaturan bawaan dan hapus semua offset kamera kendaraan yang tersimpan?" />
+  </elements>
+</l10n>
+

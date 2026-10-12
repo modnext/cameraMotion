@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_CAMERA_MOTION_SETTINGS" v="Beállítások menü" />
+    <e k="input_CAMERA_MOTION_LEAN_TOGGLE" v="Dőlés" />
+
+    <!-- Dialog Titles -->
+    <e k="cameraMotion_dialogTitle" v="Kameramozgás" />
+
+    <!-- Global Settings -->
+    <e k="cameraMotion_globalSettings" v="Globális beállítások" />
+    <e k="cameraMotion_advancedMode" v="Speciális mód" />
+
+    <!-- Movement Settings -->
+    <e k="cameraMotion_inertia" v="Gyorsítás és fékezés" />
+    <e k="cameraMotion_cornering" v="Kanyarodási mozgás" />
+    <e k="cameraMotion_terrain" v="Terepmozgás" />
+    <e k="cameraMotion_headMovement" v="Fejmozgásra adott reakció" />
+    <e k="cameraMotion_headMovementHint" v="A természetes fejmozgás kikapcsolása után elérhető" />
+    <e k="cameraMotion_walking" v="Járás közbeni mozgás" />
+
+    <!-- Camera Profiles -->
+    <e k="cameraMotion_profile_vehicleFirstPerson" v="Jármű — vezetőfülke-nézet" />
+    <e k="cameraMotion_profile_vehicleThirdPerson" v="Jármű — külső nézet" />
+    <e k="cameraMotion_profile_playerFirstPerson" v="Játékos — első személyű nézet" />
+    <e k="cameraMotion_profile_playerThirdPerson" v="Játékos — harmadik személyű nézet" />
+
+    <!-- Profile Settings -->
+    <e k="cameraMotion_enabled" v="Profil engedélyezése" />
+    <e k="cameraMotion_intensity" v="Mozgás erőssége" />
+    <e k="cameraMotion_idleSway" v="Imbolygás álló helyzetben" />
+    <e k="cameraMotion_idleWhileMoving" v="Imbolygás mozgás közben" />
+    <e k="cameraMotion_headLook" v="Természetes fejmozgás" />
+    <e k="cameraMotion_lean" v="Dőlés mértéke" />
+    <e k="cameraMotion_leanHold" v="Tartsd lenyomva a dőléshez" />
+
+    <!-- Camera Offsets -->
+    <e k="cameraMotion_offsetSection" v="Kameraeltolás" />
+    <e k="cameraMotion_cameraOffsetX" v="Kameraeltolás X" />
+    <e k="cameraMotion_offsetMode" v="Kameraeltolás módja" />
+    <e k="cameraMotion_modeGlobal" v="Globális" />
+    <e k="cameraMotion_modeCustom" v="Egyéni" />
+    <e k="cameraMotion_cameraOffsetY" v="Kameraeltolás Y" />
+    <e k="cameraMotion_cameraOffsetZ" v="Kameraeltolás Z" />
+    <e k="cameraMotion_cameraOffsetPitch" v="Kamera függőleges dőlése" />
+
+    <!-- Actions -->
+    <e k="cameraMotion_resetProfile" v="Visszaállítás" />
+    <e k="cameraMotion_resetAll" v="Minden beállítás visszaállítása" />
+    <e k="cameraMotion_resetAllConfirm" v="Visszaállítod az összes alapértelmezett beállítást, és törlöd az összes mentett járműkamera-eltolást?" />
+  </elements>
+</l10n>

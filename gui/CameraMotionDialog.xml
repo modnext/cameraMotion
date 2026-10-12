@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+  <GuiElement profile="newLayer"/>
+
+  <ThreePartBitmap profile="cameraMotionContainerBg" id="dialogElement">
+    <Bitmap profile="cameraMotionContainerArrow"/>
+
+    <GuiElement profile="cameraMotionContainerContent" id="contentContainer">
+      <Bitmap profile="fs25_dialogLine" id="topLineLeft" position="0 45px"/>
+      <Bitmap profile="fs25_dialogLineRight" id="topLineRight" position="0 45px"/>
+      <Text profile="fs25_dialogTitle" id="headerText" text="$l10n_cameraMotion_dialogTitle" position="0 60px" width="100%"/>
+
+      <!-- Profile Selector -->
+      <Bitmap profile="cameraMotionProfileSelectorContainer">
+        <MultiTextOption profile="cameraMotionProfileSelector" id="profileSelector" onClick="onClickProfileSelector" buttonLRChange="true"/>
+      </Bitmap>
+
+      <!-- Vehicle First Person Settings -->
+      <GuiElement profile="cameraMotionSettingsPage" id="profilePages[1]" visible="true">
+        <ScrollingLayout profile="cameraMotionSettingsLayout" id="vehicleFirstPersonLayout">
+          <Bitmap profile="cameraMotionCompactContainer">
+            <BinaryOption profile="cameraMotionBinaryOption" name="enabled" onClick="onToggleChanged"/>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_enabled">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer">
+            <OptionSlider profile="cameraMotionOptionSlider" name="intensity" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_intensity">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="inertiaContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="inertia" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_inertia">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="corneringContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="cornering" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_cornering">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="terrainContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="terrain" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_terrain">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="idleSwayContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="idleSway" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_idleSway">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="idleWhileMovingContainer" visible="false">
+            <BinaryOption profile="cameraMotionBinaryOption" name="idleWhileMoving" useYesNoTexts="true" onClick="onToggleChanged"/>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_idleWhileMoving">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer">
+            <OptionSlider profile="cameraMotionOptionSlider" name="headLook" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_headLook">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="headMovementContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="headMovement" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_headMovement">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Text profile="cameraMotionSettingHint" id="headMovementHint" text="$l10n_cameraMotion_headMovementHint" visible="false"/>
+          <Bitmap profile="cameraMotionCompactContainer">
+            <OptionSlider profile="cameraMotionOptionSlider" name="lean" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_lean">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionToggleContainer">
+            <BinaryOption profile="cameraMotionBinaryOption" name="leanHold" onClick="onToggleChanged"/>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_leanHold">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+
+          <ThreePartBitmap profile="cameraMotionSeparator"/>
+          <Text profile="cameraMotionSectionHeader" text="$l10n_cameraMotion_offsetSection"/>
+
+          <Bitmap profile="cameraMotionCompactContainer" name="modeElementContainer">
+            <BinaryOption profile="cameraMotionBinaryOption" name="modeElement" onClick="onClickMode"/>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_offsetMode">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="cameraOffsetXContainer">
+            <OptionSlider profile="cameraMotionOptionSlider" name="cameraOffsetX" onClick="onOffsetChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_cameraOffsetX">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="cameraOffsetYContainer">
+            <OptionSlider profile="cameraMotionOptionSlider" name="cameraOffsetY" onClick="onOffsetChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_cameraOffsetY">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="cameraOffsetZContainer">
+            <OptionSlider profile="cameraMotionOptionSlider" name="cameraOffsetZ" onClick="onOffsetChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_cameraOffsetZ">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="cameraOffsetPitchContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="cameraOffsetPitch" onClick="onOffsetChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_cameraOffsetPitch">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+        </ScrollingLayout>
+
+        <GuiElement profile="cameraMotionSettingConnectionContainer" name="idleSwayConnectionContainer" onDraw="onDrawIdleSwayConnection" visible="false">
+          <Bitmap profile="cameraMotionSettingConnection" name="idleSwayConnectionLine" size="1dp 1dp"/>
+          <Bitmap profile="cameraMotionSettingConnection" name="idleSwayConnectionTop" size="6px 1dp"/>
+          <Bitmap profile="cameraMotionSettingConnection" name="idleSwayConnectionBottom" size="6px 1dp"/>
+        </GuiElement>
+
+        <Bitmap profile="cameraMotionStopClipper"/>
+        <ThreePartBitmap profile="fs25_subCategoryListSliderBox" position="20px 0px">
+          <Slider profile="fs25_listSlider" dataElementId="vehicleFirstPersonLayout"/>
+        </ThreePartBitmap>
+      </GuiElement>
+
+      <!-- Vehicle Third Person Settings -->
+      <GuiElement profile="cameraMotionSettingsPage" id="profilePages[2]" visible="false">
+        <ScrollingLayout profile="cameraMotionSettingsLayout" id="vehicleThirdPersonLayout">
+          <Bitmap profile="cameraMotionCompactContainer">
+            <BinaryOption profile="cameraMotionBinaryOption" name="enabled" onClick="onToggleChanged"/>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_enabled">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer">
+            <OptionSlider profile="cameraMotionOptionSlider" name="intensity" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_intensity">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="inertiaContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="inertia" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_inertia">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="corneringContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="cornering" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_cornering">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="terrainContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="terrain" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_terrain">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="headMovementContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="headMovement" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_headMovement">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="idleSwayContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="idleSway" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_idleSway">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="idleWhileMovingContainer" visible="false">
+            <BinaryOption profile="cameraMotionBinaryOption" name="idleWhileMoving" useYesNoTexts="true" onClick="onToggleChanged"/>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_idleWhileMoving">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+
+          <ThreePartBitmap profile="cameraMotionSeparator"/>
+          <Text profile="cameraMotionSectionHeader" text="$l10n_cameraMotion_offsetSection"/>
+
+          <Bitmap profile="cameraMotionCompactContainer" name="modeElementContainer">
+            <BinaryOption profile="cameraMotionBinaryOption" name="modeElement" onClick="onClickMode"/>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_offsetMode">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="cameraOffsetXContainer">
+            <OptionSlider profile="cameraMotionOptionSlider" name="cameraOffsetX" onClick="onOffsetChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_cameraOffsetX">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="cameraOffsetYContainer">
+            <OptionSlider profile="cameraMotionOptionSlider" name="cameraOffsetY" onClick="onOffsetChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_cameraOffsetY">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="cameraOffsetZContainer">
+            <OptionSlider profile="cameraMotionOptionSlider" name="cameraOffsetZ" onClick="onOffsetChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_cameraOffsetZ">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="cameraOffsetPitchContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="cameraOffsetPitch" onClick="onOffsetChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_cameraOffsetPitch">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+        </ScrollingLayout>
+
+        <GuiElement profile="cameraMotionSettingConnectionContainer" name="idleSwayConnectionContainer" onDraw="onDrawIdleSwayConnection" visible="false">
+          <Bitmap profile="cameraMotionSettingConnection" name="idleSwayConnectionLine" size="1dp 1dp"/>
+          <Bitmap profile="cameraMotionSettingConnection" name="idleSwayConnectionTop" size="6px 1dp"/>
+          <Bitmap profile="cameraMotionSettingConnection" name="idleSwayConnectionBottom" size="6px 1dp"/>
+        </GuiElement>
+
+        <Bitmap profile="cameraMotionStopClipper"/>
+        <ThreePartBitmap profile="fs25_subCategoryListSliderBox" position="20px 0px">
+          <Slider profile="fs25_listSlider" dataElementId="vehicleThirdPersonLayout"/>
+        </ThreePartBitmap>
+      </GuiElement>
+
+      <!-- Player First Person Settings -->
+      <GuiElement profile="cameraMotionSettingsPage" id="profilePages[3]" visible="false">
+        <ScrollingLayout profile="cameraMotionSettingsLayout" id="playerFirstPersonLayout">
+          <Bitmap profile="cameraMotionToggleContainer">
+            <BinaryOption profile="cameraMotionBinaryOption" name="enabled" onClick="onToggleChanged"/>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_enabled">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionSliderContainer">
+            <OptionSlider profile="cameraMotionOptionSlider" name="intensity" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_intensity">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="inertiaContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="inertia" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_inertia">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="corneringContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="cornering" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_cornering">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="terrainContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="terrain" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_terrain">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="headMovementContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="headMovement" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_headMovement">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="walkingContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="walking" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_walking">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionSliderContainer" name="idleSwayContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="idleSway" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_idleSway">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionToggleContainer" name="idleWhileMovingContainer" visible="false">
+            <BinaryOption profile="cameraMotionBinaryOption" name="idleWhileMoving" useYesNoTexts="true" onClick="onToggleChanged"/>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_idleWhileMoving">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionSliderContainer">
+            <OptionSlider profile="cameraMotionOptionSlider" name="lean" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_lean">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionToggleContainer">
+            <BinaryOption profile="cameraMotionBinaryOption" name="leanHold" onClick="onToggleChanged"/>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_leanHold">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+        </ScrollingLayout>
+
+        <GuiElement profile="cameraMotionSettingConnectionContainer" name="idleSwayConnectionContainer" onDraw="onDrawIdleSwayConnection" visible="false">
+          <Bitmap profile="cameraMotionSettingConnection" name="idleSwayConnectionLine" size="1dp 1dp"/>
+          <Bitmap profile="cameraMotionSettingConnection" name="idleSwayConnectionTop" size="6px 1dp"/>
+          <Bitmap profile="cameraMotionSettingConnection" name="idleSwayConnectionBottom" size="6px 1dp"/>
+        </GuiElement>
+
+        <Bitmap profile="cameraMotionStopClipper"/>
+        <ThreePartBitmap profile="fs25_subCategoryListSliderBox" position="20px 0px">
+          <Slider profile="fs25_listSlider" dataElementId="playerFirstPersonLayout"/>
+        </ThreePartBitmap>
+      </GuiElement>
+
+      <!-- Player Third Person Settings -->
+      <GuiElement profile="cameraMotionSettingsPage" id="profilePages[4]" visible="false">
+        <ScrollingLayout profile="cameraMotionSettingsLayout" id="playerThirdPersonLayout">
+          <Bitmap profile="cameraMotionToggleContainer">
+            <BinaryOption profile="cameraMotionBinaryOption" name="enabled" onClick="onToggleChanged"/>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_enabled">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionSliderContainer">
+            <OptionSlider profile="cameraMotionOptionSlider" name="intensity" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_intensity">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="inertiaContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="inertia" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_inertia">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="corneringContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="cornering" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_cornering">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="terrainContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="terrain" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_terrain">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="headMovementContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="headMovement" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_headMovement">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionCompactContainer" name="walkingContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="walking" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_walking">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionSliderContainer" name="idleSwayContainer" visible="false">
+            <OptionSlider profile="cameraMotionOptionSlider" name="idleSway" onClick="onSliderChanged">
+              <ThreePartBitmap profile="cameraMotionOptionSliderBg" name="ignore">
+                <ThreePartBitmap profile="cameraMotionOutlineBg"/>
+              </ThreePartBitmap>
+            </OptionSlider>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_idleSway">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+          <Bitmap profile="cameraMotionToggleContainer" name="idleWhileMovingContainer" visible="false">
+            <BinaryOption profile="cameraMotionBinaryOption" name="idleWhileMoving" useYesNoTexts="true" onClick="onToggleChanged"/>
+            <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_idleWhileMoving">
+              <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+            </Text>
+          </Bitmap>
+        </ScrollingLayout>
+
+        <GuiElement profile="cameraMotionSettingConnectionContainer" name="idleSwayConnectionContainer" onDraw="onDrawIdleSwayConnection" visible="false">
+          <Bitmap profile="cameraMotionSettingConnection" name="idleSwayConnectionLine" size="1dp 1dp"/>
+          <Bitmap profile="cameraMotionSettingConnection" name="idleSwayConnectionTop" size="6px 1dp"/>
+          <Bitmap profile="cameraMotionSettingConnection" name="idleSwayConnectionBottom" size="6px 1dp"/>
+        </GuiElement>
+
+        <Bitmap profile="cameraMotionStopClipper"/>
+        <ThreePartBitmap profile="fs25_subCategoryListSliderBox" position="20px 0px">
+          <Slider profile="fs25_listSlider" dataElementId="playerThirdPersonLayout"/>
+        </ThreePartBitmap>
+      </GuiElement>
+
+      <!-- Global Settings Page -->
+      <BoxLayout profile="cameraMotionSettingsPage" id="globalSettingsPage" visible="false">
+        <Bitmap profile="cameraMotionToggleContainer">
+          <BinaryOption profile="cameraMotionBinaryOption" id="advancedMode" onClick="onAdvancedModeChanged"/>
+          <Text profile="cameraMotionSettingTitle" name="settingTitle" text="$l10n_cameraMotion_advancedMode">
+            <Bitmap profile="cameraMotionChangedMarker" name="changedMarker" visible="false"/>
+          </Text>
+        </Bitmap>
+        <Bitmap profile="cameraMotionToggleContainer">
+          <Button profile="cameraMotionSettingsButton" id="resetAllButton" text="$l10n_cameraMotion_resetAll" onClick="onClickResetAll">
+            <ThreePartBitmap profile="fs25_settingsButtonBg"/>
+          </Button>
+          <Text profile="cameraMotionSettingTitle" text="$l10n_cameraMotion_resetAll"/>
+        </Bitmap>
+      </BoxLayout>
+    </GuiElement>
+
+    <!-- Footer Buttons -->
+    <BoxLayout profile="cameraMotionButtonBox" id="buttonsBox">
+      <Button profile="buttonActivate" id="globalSettingsButton" text="$l10n_cameraMotion_globalSettings" onClick="onClickGlobalSettings"/>
+      <Button profile="buttonDelete" id="resetButton" text="$l10n_cameraMotion_resetProfile" onClick="onClickReset"/>
+      <Button profile="buttonBack" id="backButton" text="$l10n_button_back" onClick="onClickBack"/>
+    </BoxLayout>
+  </ThreePartBitmap>
+
+  <GUIProfiles>
+    <Profile name="cameraMotionButtonBox" extends="fs25_dialogButtonBox">
+      <height value="114px"/>
+      <position value="-6px 30px"/>
+      <alignmentX value="left"/>
+      <alignmentY value="bottom"/>
+      <flowDirection value="vertical"/>
+      <focusDirection value="vertical"/>
+      <fillDirectionY value="topToBottom"/>
+      <elementSpacing value="12px"/>
+    </Profile>
+    <Profile name="cameraMotionContainerBg" extends="fs25_subCategoryContainerBg">
+      <imageSliceId value="gui.buildMode_left" />
+      <endImageSliceId value="gui.buildMode_down" />
+    </Profile>
+    <Profile name="cameraMotionContainerArrow" extends="fs25_subCategoryContainerArrow">
+      <imageSliceId value="gui.buildMode_middle" />
+    </Profile>
+    <Profile name="cameraMotionContainerContent" extends="emptyPanel" with="anchorStretchingYCenter pivotTopCenter">
+      <absoluteSizeOffset value="120px 290px" />
+      <position value="-25px -110px" />
+    </Profile>
+
+    <!-- Profile Selector -->
+    <Profile name="cameraMotionProfileSelector" extends="fs25_multiTextOption" with="anchorMiddleRight">
+      <size value="100% 46px"/>
+      <defaultProfileText value="cameraMotionProfileSelectorText"/>
+      <defaultProfileBgThreePart value="emptyPanel"/>
+    </Profile>
+    <Profile name="cameraMotionProfileSelectorText" extends="fs25_multiTextOptionText">
+      <textSize value="16px"/>
+      <textColor value="$preset_fs25_colorGreyText"/>
+      <textFocusedColor value="$preset_fs25_colorMainHighlight"/>
+      <textHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+    </Profile>
+    <Profile name="cameraMotionProfileSelectorContainer" extends="cameraMotionToggleContainer">
+      <position value="0 55px"/>
+    </Profile>
+
+    <!-- Settings Section Elements -->
+    <Profile name="cameraMotionSectionHeader" extends="fs25_textDefault" with="anchorTopStretchingX">
+      <height value="30px"/>
+      <margin value="0 14px 0 14px"/>
+      <textSize value="16px"/>
+      <textBold value="true"/>
+      <textUpperCase value="true"/>
+      <textColor value="$preset_fs25_colorGreyText"/>
+    </Profile>
+    <Profile name="cameraMotionSeparator" extends="baseReference" with="anchorTopStretchingX pivotTopLeft">
+      <height value="2dp"/>
+      <imageColor value="$preset_fs25_colorGreyDark"/>
+    </Profile>
+    <Profile name="cameraMotionStopClipper" extends="baseReference" with="anchorBottomStretchingX pivotBottomLeft">
+      <height value="2dp"/>
+      <position value="0 -2dp"/>
+      <imageColor value="$preset_fs25_colorGreyDark"/>
+    </Profile>
+
+    <!-- Settings Page Layout -->
+    <Profile name="cameraMotionSettingsPage" extends="emptyPanel" with="anchorStretchingYStretchingX pivotTopCenter">
+      <size value="100% 100%"/>
+      <absoluteSizeOffset value="0px 5px"/>
+      <position value="0 -20px"/>
+      <flowDirection value="vertical"/>
+      <fitFlowToElements value="true"/>
+    </Profile>
+    <Profile name="cameraMotionSettingsLayout" extends="emptyPanel" with="anchorStretchingYStretchingX">
+      <absoluteSizeOffset value="0px 0px"/>
+      <flowDirection value="vertical"/>
+      <autoValidateLayout value="false"/>
+    </Profile>
+
+    <!-- Setting Controls -->
+    <Profile name="cameraMotionToggleContainer" extends="baseReference" with="anchorTopStretchingX">
+      <height value="65px"/>
+      <margin value="0 0 0 18px"/>
+      <imageSliceId value="gui.empty"/>
+      <imageColor value="$preset_fs25_colorGreyListItem"/>
+    </Profile>
+    <Profile name="cameraMotionSliderContainer" extends="cameraMotionToggleContainer"/>
+    <Profile name="cameraMotionCompactContainer" extends="cameraMotionToggleContainer">
+      <height value="62px"/>
+      <margin value="0 0 0 20px"/>
+    </Profile>
+    <Profile name="cameraMotionSettingTitle" extends="fs25_textDefault" with="anchorTopLeft">
+      <size value="100% 26px"/>
+      <absoluteSizeOffset value="19px 0px"/>
+      <textSize value="17px"/>
+      <textBold value="true"/>
+      <textUpperCase value="true"/>
+      <textLayoutMode value="resize"/>
+    </Profile>
+    <Profile name="cameraMotionChangedMarker" extends="baseReference" with="anchorMiddleLeft">
+      <size value="10px 10px"/>
+      <imageSliceId value="gui.tmr_marker"/>
+      <imageColor value="$preset_fs25_colorMainHighlight"/>
+    </Profile>
+    <Profile name="cameraMotionSettingConnectionContainer" extends="emptyPanel" with="anchorStretchingYLeft">
+      <size value="24px 100%"/>
+      <position value="-24px 0px"/>
+      <clipping value="true"/>
+      <handleFocus value="false"/>
+    </Profile>
+    <Profile name="cameraMotionSettingConnection" extends="baseReference" with="anchorBottomLeft">
+      <imageColor value="$preset_fs25_colorGreyText"/>
+      <handleFocus value="false"/>
+    </Profile>
+    <Profile name="cameraMotionBinaryOption" extends="fs25_binaryOption" with="anchorBottomCenter">
+      <width value="100%"/>
+      <useYesNoTexts value="nil"/>
+    </Profile>
+
+    <Profile name="cameraMotionSettingsButton" extends="emptyPanel" with="anchorBottomCenter">
+      <size value="100% 32px"/>
+      <focusOnHighlight value="true"/>
+      <textResizeWidth value="200px"/>
+      <iconSize value="16px 16px"/>
+      <iconTextOffset value="-10px -1px"/>
+      <iconSliceId value="gui.exclamationCircle"/>
+      <iconColor value="$preset_fs25_colorMainLight"/>
+      <iconFocusedColor value="$preset_fs25_colorMainDark"/>
+      <iconHighlightedColor value="$preset_fs25_colorMainLight"/>
+      <textSize value="16px"/>
+      <textBold value="true"/>
+      <textUpperCase value="true"/>
+      <textAlignment value="center"/>
+      <textColor value="$preset_fs25_colorMainLight"/>
+      <textDisabledColor value="$preset_colorDisabled"/>
+      <textFocusedColor value="$preset_fs25_colorMainDark"/>
+    </Profile>
+
+    <!-- Option Slider Profile -->
+    <Profile name="cameraMotionOptionSlider" extends="fs25_optionSlider" with="anchorBottomStretchingX">
+      <size value="100% 32px"/>
+      <wrap value="false"/>
+      <continuousInputStep value="1"/>
+      <sliderOffset value="0"/>
+      <useFillingBar value="false"/>
+      <updateTextPosition value="true"/>
+      <hideLeftRightButtons value="false"/>
+      <defaultProfileText value="cameraMotionOptionSliderText"/>
+      <defaultProfileSlider value="cameraMotionOptionSliderThumb"/>
+      <defaultProfileFillingBar value="cameraMotionOptionSliderFillingBar"/>
+      <defaultProfileButtonLeft value="cameraMotionOptionLeft"/>
+      <defaultProfileButtonRight value="cameraMotionOptionRight"/>
+    </Profile>
+    <Profile name="cameraMotionOptionSliderBg" extends="baseReference" with="anchorMiddleCenter">
+      <absoluteSizeOffset value="-73px 0"/>
+      <imageSliceId value="gui.3dShop_button_middle"/>
+      <imageColor value="$preset_fs25_colorGrey"/>
+      <startImageSize value="6px 0"/>
+      <startImageSliceId value="gui.3dShop_button_left"/>
+      <startImageColor value="$preset_fs25_colorGrey"/>
+      <endImageSize value="6px 0"/>
+      <endImageSliceId value="gui.3dShop_button_right"/>
+      <endImageColor value="$preset_fs25_colorGrey"/>
+    </Profile>
+    <Profile name="cameraMotionOutlineBg" extends="baseReference" with="pivotMiddleLeft">
+      <position value="22px 0"/>
+      <absoluteSizeOffset value="45px 0"/>
+      <imageColor value="$preset_fs25_colorGreyDark"/>
+      <imageDisabledColor value="$preset_fs25_colorGreyDark"/>
+      <startImageSize value="10px 0"/>
+      <startImageColor value="$preset_fs25_colorGreyDark"/>
+      <startImageDisabledColor value="$preset_fs25_colorGreyDark"/>
+      <endImageSize value="10px 0"/>
+      <endImageColor value="$preset_fs25_colorGreyDark"/>
+      <endImageDisabledColor value="$preset_fs25_colorGreyDark"/>
+    </Profile>
+    <Profile name="cameraMotionOptionSliderThumb" extends="baseReference" with="anchorMiddleLeft">
+      <size value="65px 20px"/>
+      <cornerSize value="0"/>
+      <imageColor value="$preset_fs25_colorGreyBinarySlider"/>
+      <imageHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+      <imageFocusedColor value="$preset_fs25_colorMainHighlight"/>
+      <imagePressedColor value="$preset_colorWhite"/>
+      <imageDisabledColor value="$preset_fs25_colorGreyDark"/>
+    </Profile>
+    <Profile name="cameraMotionOptionSliderText" extends="fs25_textDefault" with="anchorStretchingYStretchingX">
+      <size value="100% 100%"/>
+      <absoluteSizeOffset value="50px 0"/>
+      <textSize value="16px"/>
+      <textMaxNumLines value="1"/>
+      <textUpperCase value="false"/>
+      <textAlignment value="center"/>
+      <textLayoutMode value="scrolling"/>
+      <textScrollOnFocusOnly value="true"/>
+      <textColor value="$preset_fs25_colorMainDark"/>
+    </Profile>
+    <Profile name="cameraMotionOptionSliderFillingBar" extends="baseReference" with="anchorMiddleStretchingX pivotMiddleLeft">
+      <imageColor value="$preset_fs25_colorGreyDark_50"/>
+    </Profile>
+    <Profile name="cameraMotionOptionLeft" extends="buttonBase" with="anchorStretchingYLeft">
+      <size value="40px 100%"/>
+      <position value="-37px 0"/>
+      <clickSound value="NONE"/>
+      <sendActionOnRelease value="false"/>
+      <iconRotation value="180"/>
+      <iconSize value="7px 8px"/>
+      <iconTextOffset value="-7px 0"/>
+      <iconSliceId value="gui.3dShop_arrow"/>
+      <iconColor value="$preset_fs25_colorGreyText"/>
+      <iconHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+      <iconFocusedColor value="$preset_fs25_colorMainHighlight"/>
+      <iconPressedColor value="$preset_fs25_colorMainHighlight"/>
+      <iconDisabledColor value="$preset_fs25_colorGreyDark"/>
+      <imageSliceId value="noSlice"/>
+      <imageColor value="0 0 0 0"/>
+      <imageHighlightedColor value="0 0 0 0"/>
+      <imageFocusedColor value="0 0 0 0"/>
+      <imageSelectedColor value="0 0 0 0"/>
+      <imageDisabledColor value="0 0 0 0"/>
+    </Profile>
+    <Profile name="cameraMotionOptionRight" extends="cameraMotionOptionLeft" with="anchorStretchingYRight">
+      <position value="37px 0"/>
+      <iconRotation value="0"/>
+      <iconTextOffset value="7px 0"/>
+    </Profile>
+
+    <!-- Setting Hints -->
+    <Profile name="cameraMotionHint" extends="fs25_textDefault" with="anchorTopStretchingX">
+      <height value="100px"/>
+      <textSize value="15px"/>
+      <textColor value="$preset_fs25_colorGreyText"/>
+      <textMaxNumLines value="4"/>
+      <textAlignment value="left"/>
+      <textVerticalAlignment value="top"/>
+    </Profile>
+    <Profile name="cameraMotionCompactHint" extends="cameraMotionHint">
+      <height value="80px"/>
+    </Profile>
+    <Profile name="cameraMotionSettingHint" extends="cameraMotionHint">
+      <height value="30px"/>
+      <width value="100%"/>
+      <margin value="0 -10px 0 10px"/>
+      <textMaxNumLines value="2"/>
+      <textLayoutMode value="resize"/>
+      <handleFocus value="false"/>
+    </Profile>
+  </GUIProfiles>
+</GUI>

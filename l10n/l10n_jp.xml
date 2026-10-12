@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_CAMERA_MOTION_SETTINGS" v="設定メニュー" />
+    <e k="input_CAMERA_MOTION_LEAN_TOGGLE" v="傾き" />
+
+    <!-- Dialog Titles -->
+    <e k="cameraMotion_dialogTitle" v="カメラモーション" />
+
+    <!-- Global Settings -->
+    <e k="cameraMotion_globalSettings" v="全体設定" />
+    <e k="cameraMotion_advancedMode" v="詳細モード" />
+
+    <!-- Movement Settings -->
+    <e k="cameraMotion_inertia" v="加速とブレーキ" />
+    <e k="cameraMotion_cornering" v="旋回時の動き" />
+    <e k="cameraMotion_terrain" v="地形による動き" />
+    <e k="cameraMotion_headMovement" v="視線の動きへの反応" />
+    <e k="cameraMotion_headMovementHint" v="自然な頭の動きをオフにすると使用できます" />
+    <e k="cameraMotion_walking" v="歩行時の動き" />
+
+    <!-- Camera Profiles -->
+    <e k="cameraMotion_profile_vehicleFirstPerson" v="車両 — キャビン視点" />
+    <e k="cameraMotion_profile_vehicleThirdPerson" v="車両 — 外部視点" />
+    <e k="cameraMotion_profile_playerFirstPerson" v="プレイヤー — 一人称視点" />
+    <e k="cameraMotion_profile_playerThirdPerson" v="プレイヤー — 三人称視点" />
+
+    <!-- Profile Settings -->
+    <e k="cameraMotion_enabled" v="プロファイルを有効化" />
+    <e k="cameraMotion_intensity" v="動きの強さ" />
+    <e k="cameraMotion_idleSway" v="停止中の揺れ" />
+    <e k="cameraMotion_idleWhileMoving" v="移動中の揺れ" />
+    <e k="cameraMotion_headLook" v="自然な頭の動き" />
+    <e k="cameraMotion_lean" v="傾きの幅" />
+    <e k="cameraMotion_leanHold" v="長押しで傾く" />
+
+    <!-- Camera Offsets -->
+    <e k="cameraMotion_offsetSection" v="カメラオフセット" />
+    <e k="cameraMotion_cameraOffsetX" v="カメラオフセット X" />
+    <e k="cameraMotion_offsetMode" v="カメラオフセットモード" />
+    <e k="cameraMotion_modeGlobal" v="全体" />
+    <e k="cameraMotion_modeCustom" v="カスタム" />
+    <e k="cameraMotion_cameraOffsetY" v="カメラオフセット Y" />
+    <e k="cameraMotion_cameraOffsetZ" v="カメラオフセット Z" />
+    <e k="cameraMotion_cameraOffsetPitch" v="カメラの上下角オフセット" />
+
+    <!-- Actions -->
+    <e k="cameraMotion_resetProfile" v="初期設定に戻す" />
+    <e k="cameraMotion_resetAll" v="すべての設定をリセット" />
+    <e k="cameraMotion_resetAllConfirm" v="すべての設定を初期値に戻し、保存されたすべての車両カメラのオフセットを削除しますか？" />
+  </elements>
+</l10n>
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_CAMERA_MOTION_SETTINGS" v="Meniul de setări" />
+    <e k="input_CAMERA_MOTION_LEAN_TOGGLE" v="Înclinare" />
+
+    <!-- Dialog Titles -->
+    <e k="cameraMotion_dialogTitle" v="Mișcarea Camerei" />
+
+    <!-- Global Settings -->
+    <e k="cameraMotion_globalSettings" v="Setări globale" />
+    <e k="cameraMotion_advancedMode" v="Mod avansat" />
+
+    <!-- Movement Settings -->
+    <e k="cameraMotion_inertia" v="Accelerare și frânare" />
+    <e k="cameraMotion_cornering" v="Mișcare în viraje" />
+    <e k="cameraMotion_terrain" v="Mișcare pe teren" />
+    <e k="cameraMotion_headMovement" v="Reacție la mișcarea capului" />
+    <e k="cameraMotion_headMovementHint" v="Disponibil când Mișcare naturală a capului este dezactivată" />
+    <e k="cameraMotion_walking" v="Mișcare în timpul mersului" />
+
+    <!-- Camera Profiles -->
+    <e k="cameraMotion_profile_vehicleFirstPerson" v="Vehicul — vedere din cabină" />
+    <e k="cameraMotion_profile_vehicleThirdPerson" v="Vehicul — vedere exterioară" />
+    <e k="cameraMotion_profile_playerFirstPerson" v="Jucător — persoana întâi" />
+    <e k="cameraMotion_profile_playerThirdPerson" v="Jucător — persoana a treia" />
+
+    <!-- Profile Settings -->
+    <e k="cameraMotion_enabled" v="Activează profilul" />
+    <e k="cameraMotion_intensity" v="Intensitatea mișcării" />
+    <e k="cameraMotion_idleSway" v="Legănare în repaus" />
+    <e k="cameraMotion_idleWhileMoving" v="Legănare în mișcare" />
+    <e k="cameraMotion_headLook" v="Mișcare naturală a capului" />
+    <e k="cameraMotion_lean" v="Amplitudinea înclinării" />
+    <e k="cameraMotion_leanHold" v="Ține apăsat pentru a te înclina" />
+
+    <!-- Camera Offsets -->
+    <e k="cameraMotion_offsetSection" v="Decalajul camerei" />
+    <e k="cameraMotion_cameraOffsetX" v="Decalajul camerei X" />
+    <e k="cameraMotion_offsetMode" v="Modul decalajului camerei" />
+    <e k="cameraMotion_modeGlobal" v="Global" />
+    <e k="cameraMotion_modeCustom" v="Personalizat" />
+    <e k="cameraMotion_cameraOffsetY" v="Decalajul camerei Y" />
+    <e k="cameraMotion_cameraOffsetZ" v="Decalajul camerei Z" />
+    <e k="cameraMotion_cameraOffsetPitch" v="Decalajul înclinării camerei" />
+
+    <!-- Actions -->
+    <e k="cameraMotion_resetProfile" v="Resetează profilul" />
+    <e k="cameraMotion_resetAll" v="Resetează toate setările" />
+    <e k="cameraMotion_resetAllConfirm" v="Restabilești toate setările implicite și ștergi toate decalajele de cameră salvate pentru vehicule?" />
+  </elements>
+</l10n>

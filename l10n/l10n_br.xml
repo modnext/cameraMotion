@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_CAMERA_MOTION_SETTINGS" v="Menu de Configurações" />
+    <e k="input_CAMERA_MOTION_LEAN_TOGGLE" v="Inclinar" />
+
+    <!-- Dialog Titles -->
+    <e k="cameraMotion_dialogTitle" v="Movimento Da Câmera" />
+
+    <!-- Global Settings -->
+    <e k="cameraMotion_globalSettings" v="Configurações globais" />
+    <e k="cameraMotion_advancedMode" v="Modo avançado" />
+
+    <!-- Movement Settings -->
+    <e k="cameraMotion_inertia" v="Aceleração e frenagem" />
+    <e k="cameraMotion_cornering" v="Movimento em curvas" />
+    <e k="cameraMotion_terrain" v="Movimento no terreno" />
+    <e k="cameraMotion_headMovement" v="Resposta ao movimento da cabeça" />
+    <e k="cameraMotion_headMovementHint" v="Disponível quando Movimento natural da cabeça está desativado" />
+    <e k="cameraMotion_walking" v="Movimento ao caminhar" />
+
+    <!-- Camera Profiles -->
+    <e k="cameraMotion_profile_vehicleFirstPerson" v="Veículo — visão da cabine" />
+    <e k="cameraMotion_profile_vehicleThirdPerson" v="Veículo — visão externa" />
+    <e k="cameraMotion_profile_playerFirstPerson" v="Jogador — primeira pessoa" />
+    <e k="cameraMotion_profile_playerThirdPerson" v="Jogador — terceira pessoa" />
+
+    <!-- Profile Settings -->
+    <e k="cameraMotion_enabled" v="Ativar perfil" />
+    <e k="cameraMotion_intensity" v="Intensidade do movimento" />
+    <e k="cameraMotion_idleSway" v="Oscilação em repouso" />
+    <e k="cameraMotion_idleWhileMoving" v="Oscilação em movimento" />
+    <e k="cameraMotion_headLook" v="Movimento natural da cabeça" />
+    <e k="cameraMotion_lean" v="Distância da inclinação" />
+    <e k="cameraMotion_leanHold" v="Segure para inclinar" />
+
+    <!-- Camera Offsets -->
+    <e k="cameraMotion_offsetSection" v="Deslocamento da câmera" />
+    <e k="cameraMotion_cameraOffsetX" v="Deslocamento da câmera X" />
+    <e k="cameraMotion_offsetMode" v="Modo de deslocamento da câmera" />
+    <e k="cameraMotion_modeGlobal" v="Global" />
+    <e k="cameraMotion_modeCustom" v="Personalizado" />
+    <e k="cameraMotion_cameraOffsetY" v="Deslocamento da câmera Y" />
+    <e k="cameraMotion_cameraOffsetZ" v="Deslocamento da câmera Z" />
+    <e k="cameraMotion_cameraOffsetPitch" v="Inclinação vertical da câmera" />
+
+    <!-- Actions -->
+    <e k="cameraMotion_resetProfile" v="Restaurar padrões" />
+    <e k="cameraMotion_resetAll" v="Redefinir todas as configurações" />
+    <e k="cameraMotion_resetAllConfirm" v="Restaurar todas as configurações padrão e excluir os offsets de câmera salvos de todos os veículos?" />
+  </elements>
+</l10n>
+

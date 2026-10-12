@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<l10n>
+  <elements>
+    <!-- Input Bindings -->
+    <e k="input_CAMERA_MOTION_SETTINGS" v="Menu cài đặt" />
+    <e k="input_CAMERA_MOTION_LEAN_TOGGLE" v="Nghiêng người" />
+
+    <!-- Dialog Titles -->
+    <e k="cameraMotion_dialogTitle" v="Chuyển Động Camera" />
+
+    <!-- Global Settings -->
+    <e k="cameraMotion_globalSettings" v="Cài đặt chung" />
+    <e k="cameraMotion_advancedMode" v="Chế độ nâng cao" />
+
+    <!-- Movement Settings -->
+    <e k="cameraMotion_inertia" v="Tăng tốc và phanh" />
+    <e k="cameraMotion_cornering" v="Chuyển động khi vào cua" />
+    <e k="cameraMotion_terrain" v="Chuyển động theo địa hình" />
+    <e k="cameraMotion_headMovement" v="Phản hồi chuyển động đầu" />
+    <e k="cameraMotion_headMovementHint" v="Khả dụng khi tắt Chuyển động đầu tự nhiên" />
+    <e k="cameraMotion_walking" v="Chuyển động khi đi bộ" />
+
+    <!-- Camera Profiles -->
+    <e k="cameraMotion_profile_vehicleFirstPerson" v="Phương tiện — góc nhìn trong cabin" />
+    <e k="cameraMotion_profile_vehicleThirdPerson" v="Phương tiện — góc nhìn bên ngoài" />
+    <e k="cameraMotion_profile_playerFirstPerson" v="Người chơi — góc nhìn thứ nhất" />
+    <e k="cameraMotion_profile_playerThirdPerson" v="Người chơi — góc nhìn thứ ba" />
+
+    <!-- Profile Settings -->
+    <e k="cameraMotion_enabled" v="Bật cấu hình" />
+    <e k="cameraMotion_intensity" v="Cường độ chuyển động" />
+    <e k="cameraMotion_idleSway" v="Lắc lư khi đứng yên" />
+    <e k="cameraMotion_idleWhileMoving" v="Lắc lư khi di chuyển" />
+    <e k="cameraMotion_headLook" v="Chuyển động đầu tự nhiên" />
+    <e k="cameraMotion_lean" v="Độ nghiêng" />
+    <e k="cameraMotion_leanHold" v="Giữ nút để nghiêng" />
+
+    <!-- Camera Offsets -->
+    <e k="cameraMotion_offsetSection" v="Độ lệch camera" />
+    <e k="cameraMotion_cameraOffsetX" v="Độ lệch camera X" />
+    <e k="cameraMotion_offsetMode" v="Chế độ độ lệch camera" />
+    <e k="cameraMotion_modeGlobal" v="Chung" />
+    <e k="cameraMotion_modeCustom" v="Tùy chỉnh" />
+    <e k="cameraMotion_cameraOffsetY" v="Độ lệch camera Y" />
+    <e k="cameraMotion_cameraOffsetZ" v="Độ lệch camera Z" />
+    <e k="cameraMotion_cameraOffsetPitch" v="Độ lệch góc nghiêng camera" />
+
+    <!-- Actions -->
+    <e k="cameraMotion_resetProfile" v="Khôi phục mặc định" />
+    <e k="cameraMotion_resetAll" v="Đặt lại mọi cài đặt" />
+    <e k="cameraMotion_resetAllConfirm" v="Khôi phục tất cả cài đặt mặc định và xóa mọi độ lệch camera xe đã lưu?" />
+  </elements>
+</l10n>
